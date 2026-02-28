@@ -72,7 +72,7 @@ TEST(SumPrimeTest, ZeroAndSmallBounds) {
     EXPECT_EQ(sumPrime(2), 0);
     EXPECT_EQ(sumPrime(3), 2);
     EXPECT_EQ(sumPrime(4), 5);
-    EXPECT_EQ(sumPrime(5), 5); 
+    EXPECT_EQ(sumPrime(5), 5);
 }
 
 TEST(SumPrimeTest, UpToTwenty) {
