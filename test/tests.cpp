@@ -25,9 +25,10 @@ TEST(CheckPrimeTest, HandlesSmallComposites) {
 }
 
 TEST(CheckPrimeTest, HandlesLargePrime) {
-    EXPECT_TRUE(checkPrime(1000003)); 
+    EXPECT_TRUE(checkPrime(1000003));
 }
 
+// Тесты для nPrime
 TEST(NPrimeTest, FirstFew) {
     EXPECT_EQ(nPrime(1), 2);
     EXPECT_EQ(nPrime(2), 3);
@@ -65,18 +66,20 @@ TEST(NextPrimeTest, LargerNumbers) {
     EXPECT_EQ(nextPrime(14), 17);
 }
 
+// Тесты для sumPrime
 TEST(SumPrimeTest, ZeroAndSmallBounds) {
     EXPECT_EQ(sumPrime(1), 0);
     EXPECT_EQ(sumPrime(2), 0);
-    EXPECT_EQ(sumPrime(3), 2);  
-    EXPECT_EQ(sumPrime(4), 2);  
-    EXPECT_EQ(sumPrime(5), 5);  
+    EXPECT_EQ(sumPrime(3), 2);
+    EXPECT_EQ(sumPrime(4), 5);
+    EXPECT_EQ(sumPrime(5), 5); 
 }
 
 TEST(SumPrimeTest, UpToTwenty) {
     EXPECT_EQ(sumPrime(20), 77);
 }
 
+// Исходные тесты из условия
 TEST(st1, sumPrime1) {
     uint64_t res = sumPrime(2000000);
     uint64_t expected = 142913828922;
